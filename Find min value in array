@@ -18,6 +18,7 @@ min=tab[0];
     }
 
 printf("the minimum value of the inputs is %d",min);
+
 return 0;
 
 }
