@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+   int str,j,i,t[10];
+   printf("Enter 10 integers: \t");
+   for(i=0;i<10;i++){
+    scanf("%d",&t[i]);
+   }
+    for(i=0;i<10;i++){
+        for(j=i+1;j<10;j++){
+        if(t[j]<t[i]){
+            str=t[i];   //store first element in a different variable then swaps it
+            t[i]=t[j];
+            t[j]=str;
+          }
+        }
+    }
+    printf("Sorted ascendant array is :\n");
+    for(i=0;i<10;i++){
+        printf("%d \n",t[i]);
+    }
+    return 0 ;
