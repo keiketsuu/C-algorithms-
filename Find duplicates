@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+int i,j,n,count;
+
+
+printf("enter the size of the array : \n");
+scanf("%d",&n);
+int tab[n];
+printf("enter the %d elements of the array : \n",n);
+for(i=0; i<n; i++){
+        scanf("%d",&tab[i]);
+}
+    for(i=0; i<n; i++){
+        for(j=i+1; j<n; j++){
+            if(tab[i]==tab[j]){
+                count+=1;
+           }
+        }
+    }
+
+    printf("there is %d pairs of elements ",count);
+
+return 0;
+
+}
